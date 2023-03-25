@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERVIEW APPLICATION FORM</title>
+</head>
+<body>
+    <form action="sign up.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="user"> Name</label>
+            <input type="text" id="user" name="user"  required>
+        </div>
+        <div>
+            <label for="email">E-Mail</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="Ph">Phone Number </label>
+            <input type="tel" id="Ph" name="ph"  required minlength="10" maxlength="10">
+        </div>
+        <div>
+            <label for="DOB">DOB</label>
+            <input type="date" name="DOB" placeholder="Date of Brith" required max="2005-01-01"  >
+        </div>
+        <div>
+            <p>Gender</p>
+           <input type="radio" name="gender" id="m" value="male">
+           <label for="m">Male</label>
+            <input type="radio" name="gender" id="f" value="female">
+            <label for="f">Female</label>
+        </div>
+        <div>
+            <p>Select Role</p>
+            <select name="job" id="job" >
+                <option value="AM">Assistant Manager</option>
+                <option value="SM">Sales Manager</option>
+                <option value="Ex">Excutive</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <textarea name="About you" id="about" cols="50" rows="10" placeholder="About You"></textarea>
+        </div>
+        <div>
+            <label for="res">Upload your Resume</label>
+            <input type="file" id="res" name="resume">
+        </div>
+        <div>
+            <input type="checkbox" name="email" id="email">
+            <label for="email">E-mail Alert</label>
+        </div>
+        <div>
+            <input type="checkbox" name="sms" id="sms">
+            <label for="sms">SMS Alert</label>
+        </div>
+        <button type="submit">Apply </button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html> 
